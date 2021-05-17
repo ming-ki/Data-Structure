@@ -111,7 +111,7 @@ int main()
 		maze[r][c] = '.';
 		pushLocation(&q, r - 1, c);
 		pushLocation(&q, r + 1, c);
-		pushLocation(&q, r, c);
+		pushLocation(&q, r, c - 1);
 		pushLocation(&q, r, c + 1);
 
 		if (is_empty(&q))
