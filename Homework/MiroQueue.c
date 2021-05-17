@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_QUEUE_SIZE 100
+#define MAX_QUEUE_SIZE 50
 #define MAZE_SIZE 7
 
 typedef struct {
