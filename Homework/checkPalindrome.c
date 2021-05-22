@@ -58,13 +58,14 @@ int checkPalindrome(char str[])
 	{
 		push(&s, str[i]);
 	}
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; !is_empty(&s); i++)
 	{
 		if (str[i] != pop(&s))
 		{
 			return 0;
 		}
-		return 1;
+		else
+			return 1;
 	}
 }
 
